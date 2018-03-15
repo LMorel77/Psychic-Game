@@ -5,6 +5,7 @@ var computerChoices = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l
 var wins = 0;
 var losses = 0;
 var guesses = 10;
+var guessed = [];
 var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
 document.getElementById("wins").innerHTML = wins;
@@ -15,8 +16,13 @@ document.onkeyup = function (event) {
 
     // Variable to store user input.
     var userGuess = event.key;
+    guessed[10 - guesses] = userGuess;
+
+    document.getElementById("guessed").innerHTML = guessed;
+
     if (guesses == 10) {
         computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+        guessed = [];
     }    
     
 
@@ -38,23 +44,11 @@ document.onkeyup = function (event) {
     } else {
         losses++;
         guesses = 10;
+        guessed = [];
         document.getElementById("losses").innerHTML = losses;
         document.getElementById("guesses").innerHTML = guesses;
+        document.getElementById("guessed").innerHTML = guessed;
         console.log("[Inside ELSE] You lose. Resetting. Guesses: " + guesses + "; Losses: " + losses);
         console.log("-----------------------");
    }
 }
-
-
-// Creating a variable to hold our new HTML. Our HTML now keeps track of the user and computer guesses, and wins/losses/ties.
-// var html =
-//     "<p>You chose: " + userGuess + "</p>" +
-//     "<p>The computer chose: " + computerGuess + "</p>" +
-//     "<p>wins: " + wins + "</p>" +
-//     "<p>losses: " + losses + "</p>" +
-//     "<p>ties: " + ties + "</p>";
-
-// // Set the inner HTML contents of the #game div to our html string
-// document.querySelector("#game").innerHTML = html;
-//     }
-// };

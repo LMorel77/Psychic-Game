@@ -3,7 +3,7 @@ html body {
 }
 h1 {
     color: royalblue;
-    font-size: 50px;
+    font-size: 42px;
     font-weight: bold;
     text-align: center;
 }
@@ -14,7 +14,7 @@ h2 {
 }
 header {
     color: orchid;
-    font-size: 42px;
+    font-size: 69px;
     font-weight: bolder;
     margin-left: 10%;
 }
