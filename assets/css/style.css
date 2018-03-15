@@ -23,6 +23,11 @@ p {
     font-size: 21px;
     margin-left: 10%;
 }
+span {
+    color: blueviolet;
+    font-size: 27px;
+    word-spacing: 14px;
+}
 #italic {
     color: orchid;
     font-size: 21px;
