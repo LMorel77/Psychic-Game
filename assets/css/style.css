@@ -1,0 +1,17 @@
+h1 {
+    color: royalblue;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+header {
+    color: orchid;
+    font-size: 42px;
+    font-weight: bolder;
+    margin-left: 10%;
+}
+p {
+    color: orchid;
+    font-size: 18px;
+    margin-left: 10%;
+}
