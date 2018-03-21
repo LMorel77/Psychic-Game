@@ -36,6 +36,7 @@ document.onkeyup = function (event) {
         guessCount = 1;
         document.getElementById("wins").innerHTML = wins;
         document.getElementById("guessed").innerHTML = "";
+        document.getElementById("guesses").innerHTML = guesses;
     }
     else if (guesses > 1) {
         guesses--;
